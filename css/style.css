@@ -6,6 +6,11 @@
   outline: none;
 }
 
+@font-face {
+  font-family: Muller;
+  src: url(../fonts/muller.woff2);
+}
+
 a {
   text-decoration: none;
   font-weight: 600;
@@ -24,7 +29,7 @@ ul li {
   list-style-type: none;
 }
 
-button {
+.button {
   margin-top: 15px;
   background: #3C5B72;
   border: none;
@@ -33,17 +38,21 @@ button {
   max-width: 160px;
 }
 
-button:hover {
+.button:hover {
   background-color: #4b728f;
   text-shadow: 0px 0px 5px #fff;
 }
 
-button:focus {
+.button:focus {
   outline: none;
 }
 
 h1 {
   font-size: 15px;
+}
+
+body {
+  background: url(../img/bg_left.png) left top repeat-y #f3f3f3;
 }
 
 .main-link {
@@ -143,6 +152,7 @@ h1 {
 
 .link-button {
   cursor: pointer;
+  padding-bottom: 4px;
 }
 
 .social {
@@ -349,7 +359,7 @@ h5 {
 }
 
 .lastnews-content {
-  width: 1140px;
+  width: 1110px;
   height: 260px;
   margin-top: -130px;
   z-index: 5555;
@@ -357,8 +367,8 @@ h5 {
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 7px;
-  -webkit-box-shadow: 0px 91px 85px -42px rgba(0, 0, 0, 0.33);
-          box-shadow: 0px 91px 85px -42px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33);
+          box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,6 +383,50 @@ h5 {
 
 .lastnews-news_title {
   margin-bottom: 20px;
+}
+
+.about {
+  height: 700px;
+  padding-top: 220px;
+}
+
+.about-description_title {
+  display: block;
+  font-size: 40px;
+  color: gray;
+  font-weight: bold;
+  position: relative;
+}
+
+.about-description::before {
+  margin-top: 17px;
+  width: 3px;
+  height: 79px;
+  content: '';
+  position: absolute;
+  left: -10px;
+  background: #3C5B72;
+}
+
+.about-description_text {
+  padding-top: 40px;
+}
+
+.about-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.about-photo_description {
+  text-align: center;
 }
 
 .temp {
