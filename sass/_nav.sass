@@ -1,0 +1,54 @@
+.nav
+  // border: 1px solid red
+  height: 52px
+  background: $main-color
+  
+  &-wrap 
+    display: flex
+    justify-content: space-between
+
+    &_elem
+      height: 100%
+      flex-basis: 100% 
+      color: #eeeeff
+      text-transform: uppercase
+      font-weight: 600
+      text-align: center
+      margin: 0
+      align-content: center
+      border-top: 4px solid $main-color
+      &:hover .nav-submenu
+        display: block
+      &:hover
+        height: 52px
+        background: $main-color*0.85
+        border-top: 4px solid $main-color/0.5
+    &_a
+      width: 100%
+      height: 100%
+      padding-top: 8px
+      color: #eeeeff
+      display: block
+      height: 100%
+      &:hover
+        color: #eeeeff
+     
+  &-submenu
+    background: $main-color*0.85
+    position: absolute
+    display: none
+    z-index: 1
+    li
+      margin: 0
+      height: 32px
+      a 
+        font-size: 15px
+        text-transform: none
+        padding: 4px 15px
+        color: #fff
+        display: block
+        &:hover
+          background: $main-color*0.75
+
+
+
