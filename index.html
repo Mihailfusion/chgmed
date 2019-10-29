@@ -50,9 +50,9 @@
         <div class="link">
           <span class="link-small">Записатся на прием</span>
           <a class="link-tel" href="tel:+74965227303">+7(49652) 2-73-03</a>
-          
-            <input class="button link-button" type="button" value="Онлаин запись">
-          
+
+          <input class="button link-button" type="button" value="Онлаин запись">
+
         </div>
       </div>
       <div class="col-sm-1 social">
@@ -226,7 +226,8 @@
 
 
         <div class="about-photo col-xl-4 offset-1">
-          <img class="about-photo_img" src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt="" class="about-photo_img">
+          <img class="about-photo_img" src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt=""
+            class="about-photo_img">
           <div class="about-photo_description">
             Lorem ipsum dolor sit amet.
           </div>
@@ -235,7 +236,66 @@
       </div>
     </div>
   </section>
+  <!--  ------------- END SECTION ABOUT ------------- -->
+  <!--  ----------------- NEWS ABOUT ---------------- -->
+  <section class="news">
+    <div class="container">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <div class="row news-slick">
 
+        <div class="news-slick_slide col-xl-3">
+          <div class="news-slick_img">
+            <img src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt="">
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla
+          aliquam recusandae incidunt molestias
+          sunt tenetur voluptate. Libero, nesciunt nam.
+          <br><br>
+          <span>10.10.10</span> 
+          <a href="#">подробнее</a>
+        </div>
+
+         <div class="news-slick_slide col-xl-3">
+          <div class="news-slick_img">
+            <img src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt="">
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla
+          aliquam recusandae incidunt molestias
+          sunt tenetur voluptate. Libero, nesciunt nam.
+          <br><br>
+          <span>10.10.10</span> 
+          <a href="#">подробнее</a>
+        </div>
+
+        <div class="news-slick_slide col-xl-3">
+          <div class="news-slick_img">
+            <img src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt="">
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla
+          aliquam recusandae incidunt molestias
+          sunt tenetur voluptate. Libero, nesciunt nam.
+          <br><br>
+          <span>10.10.10</span>
+          <a href="#">подробнее</a>
+        </div>
+        <div class="news-slick_slide col-xl-3">
+          <div class="news-slick_img">
+            <img src="./img/5d0c957693fdac7e5145bcc9_5d0c958ada699.jpg" alt="">
+          </div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla
+          aliquam recusandae incidunt molestias
+          sunt tenetur voluptate. Libero, nesciunt nam.
+          <br><br>
+          <span>10.10.10</span>
+          <a href="#">подробнее</a>
+        </div>
+
+     
+
+
+      </div>
+    </div>
+  </section>
 
 
   <div class="temp"></div>
@@ -268,6 +328,17 @@
         nextArrow: '.slide-arrow_right',
         appendDots: '.dots',
       });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.news-slick').slick({
+        // arrows: true,
+        infinite: true,
+        dots: true,
+        variableWidth: true
+        });
     });
   </script>
 </body>

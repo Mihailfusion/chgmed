@@ -429,6 +429,11 @@ h5 {
   text-align: center;
 }
 
+.news {
+  background-color: #fff;
+  padding: 20px 0;
+}
+
 .temp {
   height: 800px;
   width: 100%;
