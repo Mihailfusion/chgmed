@@ -165,9 +165,16 @@ body {
           justify-content: flex-end;
 }
 
+.social_wh {
+  width: 20px;
+  height: 22px;
+  fill: #fff;
+}
+
 .social-keep {
-  height: 100%;
+  height: 120%;
   width: 30px;
+  margin-top: -17px;
   padding-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,8 +190,29 @@ body {
           align-items: center;
 }
 
+.social-brick {
+  width: 25px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .social-brick a {
+  height: 26px;
+  width: 26px;
   color: #3C5B72;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .social-brick:hover a {
@@ -791,22 +819,10 @@ h5 {
 }
 
 .soc {
-  display: inline-block;
   margin-top: 50px;
   color: #ffffff;
   height: 50px;
   width: 50px;
-}
-
-.soc:hover {
-  color: #fff;
-  text-shadow: 0px 0px 10px #000;
-}
-
-.copyright {
-  height: 50px;
-  background: #243744;
-  color: #555555;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -818,72 +834,15 @@ h5 {
           align-items: center;
 }
 
-.footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #3C5B72;
-  color: #b6bdcb;
-}
-
-.footer-about p {
-  font-size: 13px;
-  margin-top: 50px;
-}
-
-.footer-title {
-  text-transform: uppercase;
-  font-size: 19px;
-  height: 50px;
-  color: #eff;
-}
-
-.footer-contact_name {
-  padding-bottom: 15px;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-.footer-contact_locate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer-contact_locate i {
-  padding-right: 20px;
-  padding-top: 5px;
-  color: #eef;
-}
-
-.footer-contact_locate p {
-  font-size: 15px;
-}
-
-.footer-contact_tel {
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.footer-contact_tel a {
-  color: #dadcda;
-}
-
-.footer-contact_tel a:hover {
-  color: #ffffff;
-  text-shadow: 0px 0px 5px #000;
-}
-
-.soc {
-  display: inline-block;
-  margin-top: 50px;
-  color: #ffffff;
-  height: 50px;
-  width: 50px;
-}
-
 .soc:hover {
   color: #fff;
   text-shadow: 0px 0px 10px #000;
+}
+
+.soc_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .copyright {
