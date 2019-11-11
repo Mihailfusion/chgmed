@@ -255,7 +255,7 @@ body {
   }
   .social-keep {
     padding-bottom: 5px;
-    height: 80%;
+    height: 118%;
   }
   .main-link {
     height: 140px;
@@ -289,10 +289,10 @@ body {
   }
   .social {
     padding-bottom: 5px;
-    height: 80%;
+    height: 118%;
   }
   .social-brick {
-    height: 21px;
+    height: 25px;
   }
   .main-link {
     height: 140px;
@@ -445,6 +445,20 @@ body {
 
 .nav-submenu li a:hover {
   background: #2d4456;
+}
+
+.mobil-nav {
+  color: #fff;
+  padding: 5px 5px 5px 50px;
+  cursor: pointer;
+}
+
+.mobil-nav_menu {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
 }
 
 @media screen and (max-width: 1199px) {
