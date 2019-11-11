@@ -2,6 +2,12 @@
   // border: 1px solid red
   height: 52px
   background: $main-color
+  z-index: 99999
+  &_active
+    position: fixed
+    top: 0
+    width: 100%
+
   
   &-wrap 
     display: flex
@@ -41,6 +47,7 @@
     li
       margin: 0
       height: 32px
+      z-index: 5
       a 
         font-size: 15px
         text-transform: none
