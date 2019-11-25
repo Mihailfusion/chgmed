@@ -62,11 +62,25 @@
   color: #fff
   padding: 5px 5px 5px 50px
   cursor: pointer
+  display: none
   &_menu
     visibility: hidden
+    background: $main-color
+    width: 100%
+    height: 0
+    text-align: center
+    color: #eeeeff
+    z-index: 99999
+    li 
+      padding: 10px
+      text-transform: uppercase
+      &:nth-child(odd)
+        background: $main-color*0.9
+
 
 .active
   visibility: visible
+  height: auto
   
 @media screen and (max-width: 1199px)
   .nav
@@ -82,12 +96,21 @@
       &_elem
         font-size: 14px
         line-height: 20px
+        &:hover
+          height: 44px
 
 @media screen and (max-width: 767px)
   .nav
+    position: fixed
+    width: 100%
+    top: 0
     height: 44px
     &-wrap
       display: none
       &_elem
         font-size: 14px
         line-height: 20px
+
+  .mobil-nav
+    display: flex
+  

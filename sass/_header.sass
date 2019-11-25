@@ -20,6 +20,7 @@ body
 .header
   // border-bottom: 1px solid red
   padding-top: 40px
+  padding-bottom: 15px
   &-logo 
     display: flex
     // align-items: center
@@ -147,11 +148,11 @@ body
 
 @media screen and (max-width: 767px)
   .header
-    padding-top: 20px
+    padding-top: 90px
     width: 100%
     &-logo 
       &_img
-        display: none
+        // display: none
       &_name
         h1
           font-size: 14px
@@ -184,18 +185,18 @@ body
     width: 100%
     &-logo 
       &_img
-        display: none
+        // display: none
       &_name
         h1
           text-align: center
           font-size: 14px
           line-height: 19px
           // text-align: justify
-          width: 200%
+          width: 100%
         span 
           font-size: 8px
           line-height: 2px
-          display: none
+          // display: none
   .timing
     display: flex
     justify-content: center
@@ -203,7 +204,8 @@ body
       font-size: 16px
       line-height: 19px 
       text-align: center
-      margin-bottom: 25px
+      margin-bottom: 25px 
+
   .link
     &-tel
     font-size: 14px
@@ -227,3 +229,6 @@ body
 
   .main-link
     height: 140px
+  
+  .description
+    display: none
