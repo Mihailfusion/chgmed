@@ -930,6 +930,11 @@ h5 {
           align-items: flex-end;
 }
 
+.about-photo_img {
+  width: 100%;
+  height: auto;
+}
+
 .about-photo_description {
   text-align: center;
 }
@@ -1079,7 +1084,7 @@ h5 {
 }
 
 .workers-slick_img img {
-  width: 100%;
+  height: 100%;
 }
 
 .workers-slick_img::after {
