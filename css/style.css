@@ -1853,18 +1853,30 @@ h5 {
   }
 }
 
-.feauter {
+.features {
   height: 285px;
-  width: 100%;
+  width: vh;
   position: relative;
 }
 
-.feauter img {
-  height: 100%;
-  max-width: 100%;
+.features_img {
+  height: 285px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.feauter::after {
+.features_img-wrap {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features::after {
   content: '';
   position: absolute;
   height: 285px;
@@ -1876,7 +1888,7 @@ h5 {
   left: 0;
 }
 
-.feauter_name {
+.features_name {
   position: absolute;
   left: 0;
   width: 100%;
@@ -1891,7 +1903,7 @@ h5 {
           justify-content: center;
 }
 
-.feauter_name h2 {
+.features_name h2 {
   text-align: center;
   display: inline-block;
   text-transform: uppercase;
@@ -1899,7 +1911,7 @@ h5 {
   color: #eef;
 }
 
-.feauter_name h2:before {
+.features_name h2:before {
   position: absolute;
   content: '';
   width: 150px;
@@ -1979,6 +1991,105 @@ h5 {
 .hospital_description li {
   color: #333;
   padding: 10px;
+}
+
+.contactsPage {
+  width: 100%;
+}
+
+.contactsPage-Tabs {
+  padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactsPage-polyclinic_tab {
+  width: 200px;
+  height: 70px;
+  padding-top: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3C5B72;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 10px 0px 0px 10px;
+  cursor: pointer;
+}
+
+.contactsPage-polyclinic_tab:hover {
+  background-color: #cccccc;
+  text-shadow: 1px 1px 30px #000;
+}
+
+.contactsPage-polyclinic_tab:focus {
+  text-decoration: underline;
+}
+
+.contactsPage-hospital_tab {
+  width: 200px;
+  height: 70px;
+  padding-top: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3C5B72;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  border-left: 1px solid #888;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.contactsPage-hospital_tab:hover {
+  background-color: #cccccc;
+  text-shadow: 1px 1px 30px #000;
+}
+
+.map {
+  color: #3C5B72;
+}
+
+.map h2 {
+  margin: 50px 0;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  width: 100%;
+  text-align: center;
+}
+
+.map-description {
+  padding: 0px 0px 0px 80px;
+}
+
+.map-description h3 {
+  text-transform: uppercase;
+  padding: 10px 0 10px 0;
+}
+
+.map-description p {
+  font-size: 17px;
+}
+
+.polyclinic-map_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__content.active {
+  display: block;
 }
 
 .temp {

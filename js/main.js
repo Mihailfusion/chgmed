@@ -1,8 +1,9 @@
 $(document).ready(function () {
-  
+
   $(function () {
     $(window).scroll(function () {
       if ($(this).scrollTop() >= 158) {
+
         $('div.nav').addClass('nav_active');
       }
       else {
@@ -16,14 +17,15 @@ $(document).ready(function () {
   // <!-- menu mobil  -->
 
 
-  let $btn = document.getElementById('show');
-  let $nav = document.getElementsByClassName('mobil-nav_menu');
-  let check = document.getElementById('burger3');
-  let elem = document.getElementById('close');
-  let over = document.getElementsByClassName('overlay');
+  let $btn = document.getElementById('show'),
+      $nav = document.getElementsByClassName('mobil-nav_menu'),
+      check = document.getElementById('burger3'),
+      elem = document.getElementById('close'),
+      over = document.getElementsByClassName('overlay');
 
   $btn.addEventListener('click', function () {
 
+  
     if (check.checked) {
       $($nav).addClass("active");
       $(over).addClass("active");
@@ -133,6 +135,11 @@ $(document).ready(function () {
 
 
 });
+
+
+
+
+
   
 
 

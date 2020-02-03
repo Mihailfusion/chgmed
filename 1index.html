@@ -540,8 +540,12 @@
 
   <script>
     $(function () {
+
+      
       $(window).scroll(function () {
         if ($(this).scrollTop() >= 158) {
+          
+          
           $('div.nav').addClass('nav_active');
         }
         else {
@@ -562,11 +566,12 @@
     let over = document.getElementsByClassName('overlay')
 
     $btn.addEventListener('click', function () {
-
+    
+    
       if (check.checked) {
         $($nav).addClass("active");
         $(over).addClass("active");
-        
+    
       } else {
         $(over).removeClass("active");
         $($nav).removeClass("active");
@@ -575,11 +580,13 @@
     elem.addEventListener('click', function () {
       $($nav).removeClass("active");
       $(over).removeClass("active");
+    
       check.checked = false;
     });
     over[0].addEventListener('click', function () {
       $($nav).removeClass("active");
       $(over).removeClass("active");
+   
       check.checked = false;
       });
 
