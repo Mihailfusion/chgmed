@@ -125,6 +125,10 @@ $(document).ready(function () {
   });
 
 
+  // Табы карт
+  // let tabs = document.querySelector('.tabs'),
+  //     tab;
+
   // отключение hover на мобильной 
 
   $(document).on("touchstart", ".tables th", function () {
