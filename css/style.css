@@ -2084,6 +2084,10 @@ h5 {
   font-size: 17px;
 }
 
+.polyclinic-map_map {
+  height: 550px;
+}
+
 .polyclinic-map_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2104,6 +2108,122 @@ h5 {
   text-transform: uppercase;
   -webkit-box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
           box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
+}
+
+@media screen and (max-width: 767px) {
+  .contactsPage {
+    width: 100%;
+  }
+  .contactsPage-Tabs {
+    padding-top: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactsPage-polyclinic_tab {
+    width: 120px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #3C5B72;
+    background-color: #aaa;
+    border: 1px solid #aaa;
+    border-right: 1px solid #888;
+    border-radius: 5px 0px 0px 5px;
+    cursor: none;
+  }
+  .contactsPage-polyclinic_tab:hover {
+    background-color: #cccccc;
+    text-shadow: 1px 1px 30px #000;
+  }
+  .contactsPage-polyclinic_tab:focus {
+    text-decoration: underline;
+  }
+  .contactsPage-hospital_tab {
+    width: 120px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #3C5B72;
+    background-color: #aaa;
+    border: 1px solid #aaa;
+    border-left: 1px solid #888;
+    border-radius: 0px 5px 5px 0px;
+    cursor: none;
+  }
+  .contactsPage-hospital_tab:hover {
+    background-color: #cccccc;
+    text-shadow: 1px 1px 30px #000;
+  }
+  .tab.active {
+    background-color: #3C5B72;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
+            box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
+  }
+  .polyclinic-map_map {
+    height: 400px;
+  }
+  .polyclinic-map_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    color: #3C5B72;
+    margin-bottom: 50px;
+  }
+  .map h2 {
+    margin: 50px 0;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+  .map-description {
+    padding: 0px 0px 0px 0px;
+  }
+  .map-description h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    text-align: center;
+  }
+  .map-description p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .polyclinic-map_map {
+    height: 400px;
+  }
+  .polyclinic-map_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .temp {
