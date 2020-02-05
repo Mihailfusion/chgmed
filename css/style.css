@@ -1993,6 +1993,10 @@ h5 {
   padding: 10px;
 }
 
+.contacts {
+  background: #fafafa;
+}
+
 .contactsPage {
   width: 100%;
 }
@@ -2019,7 +2023,8 @@ h5 {
   color: #3C5B72;
   background-color: #aaa;
   border: 1px solid #aaa;
-  border-radius: 10px 0px 0px 10px;
+  border-right: 1px solid #888;
+  border-radius: 5px 0px 0px 5px;
   cursor: pointer;
 }
 
@@ -2044,7 +2049,7 @@ h5 {
   background-color: #aaa;
   border: 1px solid #aaa;
   border-left: 1px solid #888;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 5px 5px 0px;
   cursor: pointer;
 }
 
@@ -2055,6 +2060,7 @@ h5 {
 
 .map {
   color: #3C5B72;
+  margin-bottom: 50px;
 }
 
 .map h2 {
@@ -2090,6 +2096,14 @@ h5 {
 
 .tabs__content.active {
   display: block;
+}
+
+.tab.active {
+  background-color: #3C5B72;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
+          box-shadow: inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22);
 }
 
 .temp {

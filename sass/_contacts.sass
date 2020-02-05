@@ -1,3 +1,5 @@
+.contacts
+  background: #fafafa
 .contactsPage
   width: 100%
   &-Tabs
@@ -16,7 +18,8 @@
     color: $main-color
     background-color: #aaa
     border: 1px solid #aaa 
-    border-radius: 10px 0px 0px 10px
+    border-right: 1px solid #888
+    border-radius: 5px 0px 0px 5px
     cursor: pointer
     &:hover
       background-color: #cccccc
@@ -35,7 +38,7 @@
     background-color: #aaa
     border: 1px solid #aaa 
     border-left: 1px solid #888
-    border-radius: 0px 10px 10px 0px
+    border-radius: 0px 5px 5px 0px
     cursor: pointer
     &:hover
       background-color: #cccccc
@@ -43,6 +46,7 @@
 
 .map  
   color: $main-color
+  margin-bottom: 50px
   h2 
     margin:  50px 0
     text-decoration-line: underline
@@ -68,3 +72,9 @@
 
 .tabs__content.active 
   display: block/* по умолчанию показываем нужный блок */
+
+.tab.active
+  background-color: $main-color
+  color: #fff
+  text-transform: uppercase
+  box-shadow:  inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22)

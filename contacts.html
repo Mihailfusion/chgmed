@@ -175,11 +175,11 @@
     </div>
   </div>
 
-
+<div class="contacts">
   <div class="container">
     <div class="row">
-      <div class="contactsPage">
-        <div class="contactsPage-Tabs tabs">
+      <div class="contactsPage tabs">
+        <div class="contactsPage-Tabs ">
           <div class="contactsPage-polyclinic_tab tab">Поликлинника</div>
           <div class="contactsPage-hospital_tab tab">Стационар</div>
         </div>
@@ -236,12 +236,7 @@
     </div>
   </div>
   </div>
-
-
-
-
-
-
+</div>
 
     <!--  --------------- FOOTER --------------- -->
 
@@ -306,13 +301,7 @@
     </div>
 
 
-
-
     <!-- <div class="temp"></div> -->
-
-
-
-
 
 
 
@@ -343,19 +332,27 @@
 
     </script>
    <script>
-     (function ($) {
-        $(function () {
 
-          $('div.tabs').on('click', '.tab:not(.active)', function () {
-            console.log(this);
+      $(".tabs__content").not(":first").hide();
+      $(".tabs .tab").click(function() {
+        $(".tabs .tab").removeClass("active").eq($(this).index()).addClass("active");
+        $(".tabs__content").hide().eq($(this).index()).fadeIn()
+      }).eq(0).addClass("active");
+
+
+    //  (function ($) {
+    //     $(function () {
+
+    //       $('div.tabs').on('click', '.tab:not(.active)', function () {
+    //         console.log(this);
             
-            $(this)
-              .addClass('active').siblings().removeClass('active')
-              .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-          });
+    //         $(this)
+    //           .addClass('active').siblings().removeClass('active')
+    //           .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    //       });
 
-        });
-      })(jQuery);
+    //     });
+    //   })(jQuery);
    </script>
 
 
